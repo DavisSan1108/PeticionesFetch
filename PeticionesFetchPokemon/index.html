@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="pokedex">
+        <div class="pokedex-header">
+            <input type="text" id="pokemon-name" class="pokedex-input" placeholder="Ingrese nombre del Pokémon">
+            <button class="pokedex-submit" onclick="searchPokemon()">Buscar</button>
+        </div>
+        <div class="pokedex-screen" id="pokedex-screen">
+            <h2>Pokédex</h2>
+            <img id="pokemon-image" src="" alt="Imagen del Pokémon">
+            <p id="pokemon-info">Seleccione un Pokémon para ver los detalles.</p>
+        </div>
+        <div class="pokedex-footer">
+            <button class="pokedex-button" onclick="previousPokemon()" id="previous-button" disabled>&#9664;</button>
+            <button class="pokedex-button" onclick="nextPokemon()" id="next-button" disabled>&#9654;</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

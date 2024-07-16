@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos de Mercado Libre</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 20px;
+            background: url('resources/lake-7838004_1280.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+        .container {
+            margin-top: 20px;
+            background-color: rgba(255, 243, 224, 0.9);
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .title-box {
+            border: 2px solid #ff7043;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: #fff3e0;
+            margin-bottom: 20px;
+        }
+        .card {
+            margin-bottom: 20px;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .filters {
+            margin-bottom: 20px;
+        }
+        .btn-primary {
+            background-color: #ff7043;
+            border-color: #ff7043;
+        }
+        .btn-primary:hover {
+            background-color: #ff5722;
+            border-color: #ff5722;
+        }
+        .card-body {
+            background-color: #fff3e0;
+        }
+        .card-title, .card-text {
+            color: #5d4037;
+        }
+        .text-center {
+            color: #d84315;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title-box text-center">
+            <h1>Productos de Mercado Libre</h1>
+        </div>
+        <div class="filters text-center">
+            <input type="text" id="search-query" class="form-control" placeholder="Buscar productos...">
+            <button class="btn btn-primary mt-2" onclick="searchProducts()">Buscar</button>
+        </div>
+        <div id="result-list" class="row"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
